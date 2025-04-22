@@ -60,23 +60,28 @@ export const About = () => {
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
           <Col lg="7">
-            {skills.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
+            {Object.keys(skills).map((category, i) => (
+              <div key={i} className="skill-category">
+                <h4 className="category-title">
+                  {category.charAt(0).toUpperCase() + category.slice(1)}
+                </h4>
+                {skills[category].map((skill, j) => (
+                  <div key={j}>
+                    <h5 className="progress-title">{skill.name}</h5>
+                    <div className="progress">
+                      <div
+                        className="progress-bar"
+                        style={{
+                          width: `${skill.value}%`,
+                        }}
+                      >
+                        <div className="progress-value">{skill.value}%</div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                ))}
+              </div>
+            ))}
           </Col>
         </Row>
         <Row className="sec_sp">

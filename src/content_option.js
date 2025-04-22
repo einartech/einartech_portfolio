@@ -54,73 +54,74 @@ const worktimeline = [
   },
 ];
 
-const skills = [
-  // Frontend
-  { name: "HTML", value: 90 },
-  { name: "CSS", value: 85 },
-  { name: "Sass", value: 80 },
-  { name: "CSS Modules", value: 75 },
-  { name: "JavaScript", value: 90 },
-  { name: "AngularJS", value: 70 },
-  { name: "Bootstrap", value: 80 },
-  { name: "jQuery", value: 85 },
-  { name: "React", value: 80 },
-
-  // Backend
-  { name: "Node.js", value: 85 },
-  { name: "PHP", value: 70 },
-  { name: "Java", value: 75 },
-  { name: "Express.js", value: 80 },
-
-  // Databases
-  { name: "MySQL", value: 85 },
-  { name: "MongoDB", value: 80 },
-
-  // Containers and DevOps
-  { name: "Docker", value: 75 },
-  { name: "Jenkins", value: 70 },
-
-  // Security and Networking
-  { name: "Zenmap", value: 70 },
-  { name: "Putty", value: 75 },
-  { name: "Burp Suite", value: 80 },
-  { name: "Fuzz", value: 70 },
-  { name: "VPN", value: 85 },
-  { name: "SSH", value: 85 },
-
-  // Device Development
-  { name: "Rooting Android", value: 70 },
-  { name: "ODIN", value: 65 },
-  { name: "Device Rooting", value: 70 },
-  { name: "Termite", value: 60 },
-  { name: "KNX", value: 65 },
-
-  // Others
-  { name: "JSON", value: 85 },
-  { name: "WordPress", value: 80 },
-  { name: "Notion", value: 75 },
-
-  // Development and Testing Tools
-  { name: "Postman", value: 85 },
-  { name: "JUnit Jupiter", value: 75 },
-  { name: "Vitest", value: 70 },
-  { name: "Vite", value: 70 },
-
-  // Operating Systems
-  { name: "Windows", value: 90 },
-  { name: "Linux", value: 85 },
-  { name: "Kali Linux", value: 80 },
-
-  // Editors and Shells
-  { name: "Bash", value: 75 },
-  { name: "Vim", value: 70 },
-  { name: "PowerShell", value: 75 },
-  { name: "VSCode", value: 90 },
-
-  // Version Control and Collaboration
-  { name: "Git", value: 85 },
-  { name: "GitHub", value: 85 },
-];
+const skills = {
+  frontend: [
+    { name: "HTML", value: 90 },
+    { name: "CSS", value: 85 },
+    { name: "Sass", value: 80 },
+    { name: "CSS Modules", value: 75 },
+    { name: "JavaScript", value: 90 },
+    { name: "AngularJS", value: 70 },
+    { name: "Bootstrap", value: 80 },
+    { name: "jQuery", value: 85 },
+    { name: "React", value: 80 },
+  ],
+  backend: [
+    { name: "Node.js", value: 85 },
+    { name: "PHP", value: 70 },
+    { name: "Java", value: 75 },
+    { name: "Express.js", value: 80 },
+  ],
+  databases: [
+    { name: "MySQL", value: 85 },
+    { name: "MongoDB", value: 80 },
+  ],
+  devops: [
+    { name: "Docker", value: 75 },
+    { name: "Jenkins", value: 70 },
+  ],
+  security: [
+    { name: "Zenmap", value: 70 },
+    { name: "Putty", value: 75 },
+    { name: "Burp Suite", value: 80 },
+    { name: "Fuzz", value: 70 },
+    { name: "VPN", value: 85 },
+    { name: "SSH", value: 85 },
+  ],
+  deviceDevelopment: [
+    { name: "Rooting Android", value: 70 },
+    { name: "ODIN", value: 65 },
+    { name: "Device Rooting", value: 70 },
+    { name: "Termite", value: 60 },
+    { name: "KNX", value: 65 },
+  ],
+  others: [
+    { name: "JSON", value: 85 },
+    { name: "WordPress", value: 80 },
+    { name: "Notion", value: 75 },
+  ],
+  developmentTools: [
+    { name: "Postman", value: 85 },
+    { name: "JUnit Jupiter", value: 75 },
+    { name: "Vitest", value: 70 },
+    { name: "Vite", value: 70 },
+  ],
+  operatingSystems: [
+    { name: "Windows", value: 90 },
+    { name: "Linux", value: 85 },
+    { name: "Kali Linux", value: 80 },
+  ],
+  editorsAndShells: [
+    { name: "Bash", value: 75 },
+    { name: "Vim", value: 70 },
+    { name: "PowerShell", value: 75 },
+    { name: "VSCode", value: 90 },
+  ],
+  versionControl: [
+    { name: "Git", value: 85 },
+    { name: "GitHub", value: 85 },
+  ],
+};
 
 const services = [
   {
